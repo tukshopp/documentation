@@ -3,7 +3,7 @@
 **Status:** Draft  
 **Created:** 2025-11-11  
 **Last Updated:** 2025-11-11  
-**Owner:** Joshua Nwafor 
+**Owner:** Joshua Nwafor
 **Product Designer:** [Designer Name]  
 **Target Release:** v2.0.0
 
