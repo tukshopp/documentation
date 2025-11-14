@@ -38,6 +38,16 @@ documentation/
 │       ├── support.md
 │       └── glossary.md
 │
+├── prd/                                # INTERNAL: Product Requirements Documents ⭐
+│   ├── README.md                       # PRD navigation and workflow
+│   ├── prd-template.md                 # PRD template (use this!)
+│   ├── example-vendor-discounts.md     # Example PRD
+│   ├── draft/                          # PRDs being written
+│   ├── review/                         # PRDs under review with product designer
+│   ├── approved/                       # PRDs approved and ready for development
+│   ├── in-progress/                    # PRDs for features being built
+│   └── completed/                      # PRDs for shipped features
+│
 ├── api-docs/                           # PUBLIC: API documentation for developers
 │   ├── README.md                       # API overview
 │   ├── authentication.md
@@ -291,9 +301,28 @@ documentation/
 
 ---
 
-### 5. **Product Specifications** (`product-specs/`)
+### 5. **PRDs (Product Requirements Documents)** (`prd/`) ⭐
+**Audience:** Product Designers, Product Managers, Engineering  
+**Purpose:** Simplified documentation for new apps and features  
+**Access:** Internal only
+
+**Contents:**
+- Product requirements
+- User stories
+- Design requirements
+- Technical constraints
+- Success metrics
+
+**Workflow:**
+- Draft → Review (with product designer) → Approved → In Progress → Completed
+
+**Maintenance:** Engineering Lead (You) + Product Designer
+
+---
+
+### 6. **Product Specifications** (`product-specs/`)
 **Audience:** Product managers, Engineering leads, Business  
-**Purpose:** Product requirements and business logic  
+**Purpose:** Detailed product requirements and business logic  
 **Access:** Internal only
 
 **Contents:**
@@ -307,7 +336,7 @@ documentation/
 
 ---
 
-### 6. **Feature Management** (`feature-management/`)
+### 7. **Feature Management** (`feature-management/`)
 **Audience:** Product team, Engineering team  
 **Purpose:** Track feature lifecycle from request to release  
 **Access:** Internal only
@@ -322,7 +351,7 @@ documentation/
 
 ---
 
-### 7. **Design Documents** (`design-docs/`)
+### 8. **Design Documents** (`design-docs/`)
 **Audience:** Engineering team  
 **Purpose:** Technical design decisions and proposals  
 **Access:** Internal only
@@ -337,7 +366,7 @@ documentation/
 
 ---
 
-### 8. **Changelogs** (`changelogs/`)
+### 9. **Changelogs** (`changelogs/`)
 **Audience:** Internal and External  
 **Purpose:** Track changes and updates  
 **Access:** Mixed (some public, some internal)
@@ -352,7 +381,7 @@ documentation/
 
 ---
 
-### 9. **Roadmap** (`roadmap/`)
+### 10. **Roadmap** (`roadmap/`)
 **Audience:** Internal and External  
 **Purpose:** Future planning and transparency  
 **Access:** Mixed
@@ -367,7 +396,7 @@ documentation/
 
 ---
 
-### 10. **Compliance** (`compliance/`)
+### 11. **Compliance** (`compliance/`)
 **Audience:** Legal, Security, Engineering leads  
 **Purpose:** Regulatory and security compliance  
 **Access:** Internal only
@@ -384,40 +413,41 @@ documentation/
 
 ## 📝 Document Templates
 
-### Feature Specification Template
+### PRD Template (For New Features/Apps) ⭐
 ```markdown
-# Feature Name
+# PRD: [Feature/App Name]
 
-**Status:** [Planned | In Progress | Implemented]  
-**Priority:** [P0 | P1 | P2 | P3]  
-**Owner:** [Product Manager Name]  
-**Engineering Lead:** [Engineering Lead Name]  
+**Status:** [Draft | Review | Approved | In Progress | Completed]  
+**Owner:** [Your Name]  
+**Product Designer:** [Designer Name]  
 **Target Release:** [Version/Date]
 
-## Overview
-Brief description of the feature
+## Problem Statement
+What problem are we solving?
 
-## Business Requirements
-Why we're building this
+## Proposed Solution
+High-level solution description
 
 ## User Stories
 As a [user type], I want [goal] so that [benefit]
 
+## Requirements
+Must have, should have, nice to have
+
+## Design Requirements
+UI/UX needs, user flows
+
 ## Technical Requirements
-Technical implementation needs
+Services affected, API changes, database changes
 
 ## Success Metrics
 How we measure success
 
-## Dependencies
-What this depends on
-
-## Risks
-Potential issues
-
 ## Timeline
 Development timeline
 ```
+
+**Use:** `prd/prd-template.md` for complete template
 
 ### Technical Design Document Template
 ```markdown
@@ -496,18 +526,18 @@ Links to related ADRs
 
 ## 🔄 Documentation Workflow
 
-### For New Features
+### For New Features/Apps (Simplified!)
 
-1. **Feature Request** → `feature-management/feature-requests/`
-2. **RFC (if needed)** → `feature-management/rfcs/`
-3. **Product Spec** → `product-specs/features/planned/`
-4. **Technical Design** → `design-docs/system-design/`
-5. **Implementation** → `feature-management/implementation/`
+1. **PRD Draft** → `prd/draft/[feature-name].md` ⭐ START HERE
+2. **PRD Review** → `prd/review/[feature-name].md` (with product designer)
+3. **PRD Approved** → `prd/approved/[feature-name].md`
+4. **Technical Design** → `design-docs/system-design/[feature-name]-design.md`
+5. **Implementation** → `prd/in-progress/[feature-name].md`
 6. **Documentation Updates**:
    - User docs → `user-docs/`
    - API docs → `api-docs/`
    - Technical specs → `technical-specs/`
-7. **Release** → `feature-management/releases/`
+7. **Shipped** → `prd/completed/[feature-name].md`
 8. **Changelog** → `changelogs/CHANGELOG.md`
 
 ### For Technical Changes

@@ -85,6 +85,17 @@ Exciting new features in development:
 
 ### 📊 For Product Team (Internal Documentation)
 
+#### [PRDs (Product Requirements Documents)](./prd/) 📋 ⭐
+**Simplified documentation for new apps and features**
+- [PRD Template](./prd/prd-template.md) - Use this for all new features/apps
+- [Draft PRDs](./prd/draft/) - PRDs being written
+- [Review PRDs](./prd/review/) - PRDs under review with product designer
+- [Approved PRDs](./prd/approved/) - PRDs approved and ready for development
+- [In Progress](./prd/in-progress/) - PRDs for features being built
+- [Completed](./prd/completed/) - PRDs for shipped features
+
+**Purpose:** Single source of truth for communicating with product designer
+
 #### [Product Specifications](./product-specs/) 📋
 **Product requirements and business logic**
 - [Requirements](./product-specs/requirements/) - Business requirements by user type
@@ -182,21 +193,38 @@ Essential templates for creating documentation:
 
 ## 🔄 Documentation Workflow
 
-### For New Features
-1. Feature Request → `feature-management/feature-requests/`
-2. Product Spec → `product-specs/features/planned/`
-3. Technical Design → `design-docs/system-design/`
-4. Implementation → Code + Tests
-5. Documentation → Update user docs, API docs, technical specs
-6. Release → `feature-management/releases/`
-7. Changelog → `changelogs/CHANGELOG.md`
+**📖 Complete Guide:** [DOCUMENTATION_WORKFLOW.md](./DOCUMENTATION_WORKFLOW.md)
 
-### For Technical Changes
-1. Proposal → `design-docs/technical-proposals/`
-2. ADR → `design-docs/architecture-decisions/`
-3. Implementation → Code + Tests
-4. Documentation → Update technical specs
+### Quick Reference
+
+#### 🆕 Adding a New App or Feature?
+**⭐ SIMPLIFIED: Start with a PRD!**
+
+**START HERE:** `prd/draft/[feature-or-app-name].md`
+
+**Then follow:**
+1. Share with Product Designer → `prd/review/`
+2. Get Approval → `prd/approved/`
+3. Technical Design → `design-docs/system-design/`
+4. Implementation → `prd/in-progress/`
+5. User Docs → `user-docs/`
+6. API Docs → `api-docs/` (if API changes)
+7. Shipped → `prd/completed/`
+8. Changelog → `changelogs/CHANGELOG.md`
+
+**For Backend Services Only:** `design-docs/technical-proposals/[service-name].md`
+
+#### 🏗️ Major Architecture Change?
+**START HERE:** `design-docs/architecture-decisions/adr-XXX-[change-name].md`
+
+**Then follow:**
+1. ADR → `design-docs/architecture-decisions/`
+2. Technical Design → `design-docs/system-design/`
+3. Update Architecture Docs → `technical-specs/architecture/`
+4. Implementation → Code
 5. Internal Changelog → `changelogs/CHANGELOG-INTERNAL.md`
+
+**See [DOCUMENTATION_WORKFLOW.md](./DOCUMENTATION_WORKFLOW.md) for complete workflows and examples.**
 
 ---
 

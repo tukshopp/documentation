@@ -6,13 +6,41 @@ A quick reference guide for navigating TukShopp's documentation structure.
 
 ### As an Engineer
 
+#### Add a New App or Feature
+**⭐ SIMPLIFIED: Start with a PRD!**
+
+**START HERE:** [PRD Template](./prd/prd-template.md)
+
+**Quick Path:**
+1. Create [PRD](./prd/draft/) - **START HERE** ⭐
+2. Share with Product Designer → `prd/review/`
+3. Get Approval → `prd/approved/`
+4. Create [Technical Design](./design-docs/system-design/)
+5. Implement → `prd/in-progress/`
+6. Update [User Docs](./user-docs/)
+7. Update [API Docs](./api-docs/) (if API changes)
+8. Shipped → `prd/completed/`
+9. Update [Changelog](./changelogs/CHANGELOG.md)
+
+**For New Service (Backend Only):**
+1. Create [Technical Proposal](./design-docs/technical-proposals/) - **START HERE**
+2. Create [ADR](./design-docs/architecture-decisions/) (if architecture change)
+3. Create [Technical Design](./design-docs/system-design/)
+4. Create [Service Spec](./technical-specs/services/)
+5. Implement code
+6. Create [API Docs](./api-docs/)
+7. Update [System Architecture](./technical-specs/architecture/system-architecture.md)
+8. Update [Infrastructure](./technical-specs/architecture/infrastructure.md)
+9. Update [Changelog](./changelogs/CHANGELOG.md)
+
 #### Start Working on a New Feature
-1. Read the [feature spec](./product-specs/features/)
-2. Create a [technical design](./design-docs/templates/design-doc-template.md)
-3. If making architecture changes, create an [ADR](./design-docs/templates/adr-template.md)
-4. Implement and test
-5. Update [user docs](./user-docs/) and [API docs](./api-docs/)
-6. Update [CHANGELOG](./changelogs/CHANGELOG.md)
+1. Create [Feature Request](./feature-management/feature-requests/) - **START HERE**
+2. Create [Product Spec](./product-specs/features/)
+3. Create [Technical Design](./design-docs/system-design/)
+4. Create [ADR](./design-docs/architecture-decisions/) (if architecture changes)
+5. Implement and test
+6. Update [user docs](./user-docs/) and [API docs](./api-docs/)
+7. Update [CHANGELOG](./changelogs/CHANGELOG.md)
 
 #### Set Up My Development Environment
 → [Development Setup Guide](./internal-docs/engineering/development-setup.md)
@@ -88,6 +116,8 @@ A quick reference guide for navigating TukShopp's documentation structure.
 
 | I'm Looking For... | It's In... |
 |-------------------|------------|
+| **📖 Documentation workflow** | [`DOCUMENTATION_WORKFLOW.md`](./DOCUMENTATION_WORKFLOW.md) ⭐ |
+| **📋 PRDs (Product Requirements)** | [`prd/`](./prd/) ⭐ **START HERE for new features/apps** |
 | User guides (customers, vendors, riders) | [`user-docs/`](./user-docs/) |
 | API documentation | [`api-docs/`](./api-docs/) |
 | System architecture | [`technical-specs/architecture/`](./technical-specs/architecture/) |
@@ -106,6 +136,7 @@ A quick reference guide for navigating TukShopp's documentation structure.
 | Sprint planning | [`feature-management/implementation/`](./feature-management/implementation/) |
 | Release notes | [`feature-management/releases/`](./feature-management/releases/) |
 | Technical designs | [`design-docs/system-design/`](./design-docs/system-design/) |
+| **Technical proposals** | [`design-docs/technical-proposals/`](./design-docs/technical-proposals/) |
 | Architecture decisions (ADRs) | [`design-docs/architecture-decisions/`](./design-docs/architecture-decisions/) |
 | Changelog (public) | [`changelogs/CHANGELOG.md`](./changelogs/CHANGELOG.md) |
 | Roadmap | [`roadmap/ROADMAP.md`](./roadmap/ROADMAP.md) |
@@ -119,10 +150,11 @@ A quick reference guide for navigating TukShopp's documentation structure.
 
 | Template | Location | Use For |
 |----------|----------|---------|
-| Feature Specification | [`product-specs/features/feature-template.md`](./product-specs/features/feature-template.md) | New feature specs |
+| **⭐ PRD (Product Requirements)** | [`prd/prd-template.md`](./prd/prd-template.md) | **New features/apps - START HERE** |
 | Technical Design Doc | [`design-docs/templates/design-doc-template.md`](./design-docs/templates/design-doc-template.md) | Technical designs |
 | ADR (Architecture Decision Record) | [`design-docs/templates/adr-template.md`](./design-docs/templates/adr-template.md) | Architecture decisions |
-| Feature Request | [`feature-management/feature-requests/template.md`](./feature-management/feature-requests/template.md) | Submitting feature requests |
+| Feature Specification | [`product-specs/features/feature-template.md`](./product-specs/features/feature-template.md) | Detailed feature specs |
+| Feature Request | [`feature-management/feature-requests/template.md`](./feature-management/feature-requests/template.md) | Initial feature ideas |
 
 ---
 
