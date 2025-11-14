@@ -426,6 +426,12 @@ Transform tukshopp.ng into a comprehensive web platform featuring:
   - Account Service API
   - Vendor Service API
 
+> **📚 Current API Documentation:** For detailed API specifications, see the [API Documentation](../../api-docs/README.md) folder. This includes documentation for:
+> - [Auth Service](../../api-docs/auth-service.md)
+> - [Account Service](../../api-docs/account-service.md)
+> - [Vendor Service](../../api-docs/vendor-service.md)
+> - [Marketplace Service](../../api-docs/marketplace-service.md)
+
 #### Hosting & Infrastructure
 - **Hosting:** AWS (CloudFront + S3) or Vercel/Netlify
 - **CDN:** CloudFront for static assets

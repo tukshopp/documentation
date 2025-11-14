@@ -455,6 +455,12 @@ A standalone Logistics Service that provides:
 
 #### Integration with Existing Services
 
+> **📚 Current API Documentation:** For detailed API specifications of existing services, see the [API Documentation](../../api-docs/README.md) folder. This includes documentation for:
+> - [Auth Service](../../api-docs/auth-service.md)
+> - [Account Service](../../api-docs/account-service.md)
+> - [Vendor Service](../../api-docs/vendor-service.md)
+> - [Marketplace Service](../../api-docs/marketplace-service.md)
+
 **Auth Service:**
 - Authentication for customers, riders, partners
 - Authorization and role management

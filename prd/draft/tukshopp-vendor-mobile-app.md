@@ -732,6 +732,12 @@ A native mobile application (iOS and Android) that provides vendors with full ac
   - Account Service API
   - Marketplace Service API
 
+> **📚 Current API Documentation:** For detailed API specifications, see the [API Documentation](../../api-docs/README.md) folder. This includes documentation for:
+> - [Auth Service](../../api-docs/auth-service.md)
+> - [Account Service](../../api-docs/account-service.md)
+> - [Vendor Service](../../api-docs/vendor-service.md)
+> - [Marketplace Service](../../api-docs/marketplace-service.md)
+
 ### Services Integration
 
 #### Vendor Service
